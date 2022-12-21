@@ -13,6 +13,7 @@ import os
 # User Authorization using GitHub workflow secrets
 d = discogs_client.Client('my_user_agent/1.0', user_token = os.environ['API_TOKEN'])
 
+# check file path to troubleshoot scheduling workflow
 def current_path(): 
     print("Current working directory before") 
     print(os.getcwd()) 
