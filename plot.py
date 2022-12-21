@@ -59,15 +59,3 @@ fig_country_pie = px.pie(country_count, values='count', names='country', title='
 fig_country_pie.update_layout(font_family="monospace")
 fig_country_pie.write_html("fig_country_pie.html")
 fig_country_pie.show()
-
-
-# archive
-
-# df_2020 = px.data.gapminder().query("year == 2020")
-
-# df_format = df_2020.groupby(["format"]).count().reset_index()
-# print(df_format)
-
-# fig_format_2020 = px.pie(df_2020_format, values='value', names='format', title='Formats Released in 2020')
-# fig_format_2020.write_html("fig_format_2020.html")
-# ig_format_2020.show()
