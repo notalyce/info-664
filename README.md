@@ -1,5 +1,7 @@
 # Plotting Discogs Data in Plotly
 
+[![schedule-random-release](https://github.com/notalyce/info-664/actions/workflows/schedule-random-release.yml/badge.svg?branch=main)](https://github.com/notalyce/info-664/actions/workflows/schedule-random-release.yml)
+
 Final project for INFO-664: Programming for Cultural Heritage at Pratt Institute. This project offers a starting point for visualizing music data from Discogs. The data is first cleaned using Pandas, then visualized using Plotly Express and exporting the graphs to an HTML file. For the example graphs, I visualized the techno genre, and saw some interesting trends in how formats have changed over time. Others could easily repurpose this code to explore broader datasets or even more genres.
 
 A live example can be viewed at:
