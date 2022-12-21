@@ -8,16 +8,13 @@ pio.templates.default = "simple_white"
 # csv file name
 filename = "release_data_styles.csv"
 
-# filter CSV data
+# filter and clean CSV data
 
 df = pd.read_csv(filename, index_col=0)
-
-# print(df.columns)
 
 df = df[df['style'].str.contains('Techno', na=False)]
 df.dropna(inplace = True)
 df.drop_duplicates(inplace = True)
-# print(df)
 
 # plot releases by format, by year
 

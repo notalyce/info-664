@@ -19,7 +19,7 @@ For my final project for INFO-664, I had hoped to explore music data from [Disco
 
 ### First Efforts
 
-Initially, I tried pulling data using [python3-discogs-client](python3-discogs-client) and storing “dub techno” artists in a SQLite database locally. While I was able to successfully create a database and scrape some data, I ran into issues with downloading all of the data at once, and was only able to download about 400 out of over 30,000 records. The file `test-2.py` in the `archive` folder of the project reflects the code for this attempt. This format would have allowed me flexibility in deciding which data made it into my database - I could easily include columns such as the URL on Discogs (which could have opened up possibilities for scraping with a tool like [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/)).
+Initially, I tried pulling data using [python3-discogs-client](https://python3-discogs-client.readthedocs.io/en/latest/) and storing “dub techno” artists in a SQLite database locally. While I was able to successfully create a database and scrape some data, I ran into issues with downloading all of the data at once, and was only able to download about 400 out of over 30,000 records. The file `test-2.py` in the `archive` folder of the project reflects the code for this attempt. This format would have allowed me flexibility in deciding which data made it into my database - I could easily include columns such as the URL on Discogs (which could have opened up possibilities for scraping with a tool like [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/)).
 
 ### Data Dumps
 
@@ -36,3 +36,13 @@ This csv data set includes columns for **release_id, country, year, genre, style
 For visualization, I consulted several blog posts like [this one](https://towardsdatascience.com/top-6-python-libraries-for-visualization-which-one-to-use-fe43381cd658) to decide which tool to use, and landed on [Plotly Express](https://plotly.com/python/plotly-express/) which allows [easy exporting of graphs to HTML](https://plotly.com/python/interactive-html-export/). I used [Pandas](https://pandas.pydata.org/) to manage and [clean](https://www.w3schools.com/python/pandas/pandas_cleaning.asp) the data.
 
 Because I didn't initially include a `.gitignore` file, some of the experiments above are not documented in GitHub, though I did include the most promising first attempt to create a SQLite database in the `archive` folder.
+
+### Gathering Further Data By Release
+
+I started working on a file called `random_release.py` to pull a random release and display it on  `index.html` every 5 minutes. This uses the [python3-discogs-client](https://python3-discogs-client.readthedocs.io/en/latest/) to pull further data on a specific release based on the `release_id` in the csv file. This required learning how to [hide my Discogs API key](https://medium.com/black-tech-diva/hide-your-api-keys-7635e181a06c) before uploading the new files to GitHub.
+
+To use this file, you'll need to add a `config.py` file to your base directory which includes your Discogs API key as follows:
+
+`api_token = ""`
+
+I referenced two guides for this step: [one for writing an HTML file in Python](https://www.geeksforgeeks.org/how-to-write-to-an-html-file-in-python/), and [one for scheduling the function to run every 5 minutes](https://www.geeksforgeeks.org/python-script-that-is-executed-every-5-minutes/).

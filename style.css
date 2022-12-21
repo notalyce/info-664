@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;400;500;700;800&display=swap');
+body {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Martian Mono', monospace;
+}
+a {
+    color: lightgreen;
+}
+p {
+    font-weight: 200;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    opacity: 0.8;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: 0em;
+}

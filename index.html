@@ -1,45 +1,29 @@
 <!DOCTYPE html>
 <head>
+    <title></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;400;500;700;800&display=swap');
-        body {
-            color: #ffffff;
-            text-align: center;
-            font-family: 'Martian Mono', monospace;
-            background-color: #2b896a;
-            background-image:  linear-gradient(#2aad44 1px, transparent 1px), linear-gradient(to right, #2aad44 1px, #2b896a 1px);
-            background-size: 20px 20px;
-            margin: 1em 20em;
-        }
-        a {
-            color: lightgreen;
-        }
-        p {
-            font-weight: 200;
-            font-size: 1em;
-            line-height: 1.5em;
-        }
-        iframe {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            opacity: 0.8;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-            letter-spacing: 0em;
-        }
+    body {
+        background-color: #2b896a;
+        background-image:  linear-gradient(#2aad44 1px, transparent 1px), linear-gradient(to right, #2aad44 1px, #2b896a 1px);
+        background-size: 20px 20px;
+        margin: 1em 20em;
+    }
     </style>
 </head>
 <body>
     <h1>Plotting Discogs Data in Plotly</h1>
 
     <p>Data courtesy of <a href="https://www.kaggle.com/datasets/sohrabdaemi/discogs-database-all-release-data">Sohrab Daemi on Kaggle</a>, last updated in September 2020.</p>
+    <p>Current data scope is set to search <strong>style</strong> for <strong>Techno</strong>.</p>
+    <p>More information on <a href="https://github.com/notalyce/info-664">GitHub</a>.</p>
+    <h2>Random Release</h2>
+    <iframe src="random_release.html" width="800" height="500"></iframe>
 
-    <h2>Techno: Formats Over Time</h2>
+    <h2>Formats Over Time</h2>
     <p><strong>Files</strong> have become increasingly prominent since the early 2000s as digital music has taken hold. <strong>Vinyl</strong> releases decreased slightly and began to increase again in the 2010s, with a sharp decrease between 2019 and 2020, which may be because the dataset was last updated in September 2020, but also could be related to the COVID-19 pandemic. <strong>Cassettes</strong> went out of style in the mid-2000s, but appear to have made a resurgence.</strong></p>
     <iframe src="fig_format_year.html" width="800" height="600"></iframe>
 
@@ -51,5 +35,6 @@
 
     <h2>Techno: Country Breakdown</h2>
     <iframe src="fig_country_pie.html" width="800" height="600"></iframe>
+
 </body>
 </html>
