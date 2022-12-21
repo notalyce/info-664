@@ -8,7 +8,7 @@ To get started, you'll need to download [the data set, courtesy of Sohrab Daemi 
 
 If you want to change the scope of the data being plotted, edit the genre in line 17 of **plot.py**. You can also change 'style' to 'genre' here depending on which column you want to work with, or change the scope of the data entirely using [Pandas dataframes](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html).
 
-df = df[df['style'].str.contains('Techno', na=False)]
+`df = df[df['style'].str.contains('Techno', na=False)]`
 
 ## Behind The Project
 
