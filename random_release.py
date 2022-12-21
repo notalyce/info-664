@@ -6,8 +6,11 @@ import discogs_client
 # Discogs client documentation: https://github.com/joalla/discogs_client
 # https://python3-discogs-client.readthedocs.io/en/latest/
 
-# User Authorization
-d = discogs_client.Client('my_user_agent/1.0', user_token = config.api_token)
+# User Authorization using config file
+# d = discogs_client.Client('my_user_agent/1.0', user_token = config.api_token)
+
+# User Authorization using GitHub workflow secrets
+d = discogs_client.Client('my_user_agent/1.0', user_token = os.environ['API_TOKEN'])
 
 # csv file name
 filename = "release_data_styles.csv"
