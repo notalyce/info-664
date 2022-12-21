@@ -14,7 +14,6 @@ jobs:
         with:
           repository: notalyce/info-664
           token: ${{ secrets.GITHUB_TOKEN }}
-          path: ${{ env.DEVOPS_DIR }}
 
       - name: setup python
         uses: actions/setup-python@v2
