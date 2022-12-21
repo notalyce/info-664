@@ -14,7 +14,7 @@ import os
 d = discogs_client.Client('my_user_agent/1.0', user_token = os.environ['API_TOKEN'])
 
 # csv file name
-filename = "info-664/release_data_styles.csv"
+filename = "/release_data_styles.csv"
 
 # filter and clean CSV data
 
