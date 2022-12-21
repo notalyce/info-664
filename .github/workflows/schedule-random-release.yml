@@ -28,7 +28,6 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
           API_TOKEN: ${{ secrets.API_TOKEN }}
-        uses: actions/checkout@v2
         run: python random_release.py
           
       - name: commit files
