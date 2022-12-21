@@ -47,4 +47,4 @@ To use this file, you'll need to add a `config.py` file to your base directory w
 
 `api_token = ""`
 
-I referenced two guides for this step: [one for writing an HTML file in Python](https://www.geeksforgeeks.org/how-to-write-to-an-html-file-in-python/), and [one for scheduling the function to run every 5 minutes with a GitHub action](https://canovasjm.netlify.app/2020/11/29/github-actions-run-a-python-script-on-schedule-and-commit-changes/).
+I referenced two guides for this step: [one for writing an HTML file in Python](https://www.geeksforgeeks.org/how-to-write-to-an-html-file-in-python/), and [one for scheduling the function to run every 5 minutes with a GitHub action](https://canovasjm.netlify.app/2020/11/29/github-actions-run-a-python-script-on-schedule-and-commit-changes/). I also discovered that I needed to use a [GitHub secret token](https://medium.datadriveninvestor.com/accessing-github-secrets-in-python-d3e758d8089b) for the repository to store my Discogs API token here.
