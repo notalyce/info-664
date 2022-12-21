@@ -3,6 +3,7 @@ import pandas as pd
 import schedule
 import time
 import discogs_client
+import os
 # Discogs client documentation: https://github.com/joalla/discogs_client
 # https://python3-discogs-client.readthedocs.io/en/latest/
 
